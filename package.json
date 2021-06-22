@@ -1,0 +1,25 @@
+{
+    "name": "prisma-graphql-postgres-typescript",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "author": "Juan Navas <iam@juannavas.dev>",
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon src/index.ts",
+        "generate": "graphql-codegen --config codegen.yml"
+    },
+    "dependencies": {
+        "@prisma/client": "2.25.0",
+        "apollo-server": "^2.25.1",
+        "graphql": "^15.5.1",
+        "prisma": "2.25.0"
+    },
+    "devDependencies": {
+        "@graphql-codegen/cli": "1.21.5",
+        "nodemon": "^2.0.7",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.4",
+        "@graphql-codegen/typescript": "1.22.3",
+        "@graphql-codegen/typescript-resolvers": "1.19.4"
+    }
+}
