@@ -5,7 +5,9 @@
     "author": "Juan Navas <iam@juannavas.dev>",
     "license": "MIT",
     "scripts": {
-        "start": "nodemon src/index.ts",
+        "dev": "nodemon src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
         "generate": "graphql-codegen --config codegen.yml"
     },
     "dependencies": {
